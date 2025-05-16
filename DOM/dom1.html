@@ -1,0 +1,13 @@
+//Contador de clicks
+<body>
+    <p>Pulsa en el botón</p>
+    <button id="contadorBtn">Clicks: 0</button>
+    </body> 
+    <script>
+        let contador = 0;
+        const btn = document.getElementById('contadorBtn');
+        btn.addEventListener('click', () => {
+contador++;
+btn.textContent = "Clicks: "+contador;
+});
+</script>
