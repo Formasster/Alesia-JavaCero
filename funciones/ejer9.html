@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="primero" placeholder="Introduce el primer número">
+    <br>
+    <input type="text" id="segundo" placeholder="Introduce el segundo número">
+    <button onclick="dimeSuma()">Ver Resultado</button>
+    <p id="resultado"></p>
+
+    <script>
+        function dimeSuma(){
+            const num1 = parseInt(document.getElementById("primero").value);
+            const num2 = parseInt(document.getElementById("segundo").value);
+            const suma = num1 + num2;
+            document.getElementById("resultado").innerHTML = `<strong>La suma de ${num1} y ${num2} es ${suma}</strong>`;
+        }
+    </script>
+</body>
+</html>
